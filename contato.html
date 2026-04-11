@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato | New Floor</title>
+    <meta name="description" content="Solicite um orçamento técnico personalizado com a New Floor." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="contato-page">
+    <div class="topbar">
+        <div class="container topbar-inner">
+            <span>Empresa homologada com os principais fabricantes do Brasil</span>
+            <div class="topbar-links">
+                <a href="tel:+551938822904">(19) 3882-2904</a>
+                <a href="https://wa.me/5519999999700" target="_blank">WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo-wrap">
+                <img src="assets/logo-newfloor.png" alt="Logo New Floor" class="logo" />
+                <div class="logo-text">
+                    <strong>New Floor</strong>
+                    <span>Pisos e Revestimentos Industriais</span>
+                </div>
+            </a>
+
+            <nav class="nav" id="nav">
+                <a href="index.html">Início</a>
+                <a href="empresa.html">Empresa</a>
+                <a href="servicos.html">Serviços</a>
+                <a href="segmentos.html">Segmentos</a>
+                <a href="obras.html">Obras</a>
+                <a href="contato.html" class="active">Contato</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="contato.html" class="btn btn-outline desktop-only">Solicitar proposta</a>
+                <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-hero contact-hero">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Início</a>
+                <span>/</span>
+                <span>Contato</span>
+            </div>
+            <span class="section-tag">ORÇAMENTO PERSONALIZADO</span>
+            <h1>Solicite um orçamento técnico de forma guiada</h1>
+            <p>
+                Preencha as etapas abaixo para enviar uma solicitação mais completa e estratégica
+                para a equipe da New Floor.
+            </p>
+        </div>
+    </section>
+
+    <section class="section contact-page-section">
+        <div class="container contact-page-grid">
+            <div class="wizard-column reveal">
+                <div class="wizard-hero-card">
+                    <div>
+                        <span class="section-tag">FORMULÁRIO PREMIUM</span>
+                        <h2>Orçamento técnico personalizado</h2>
+                        <p>
+                            O cliente preenche por etapas, de forma organizada, e o formulário
+                            monta a solicitação completa para envio via WhatsApp.
+                        </p>
+                    </div>
+
+                    <div class="wizard-hero-badges">
+                        <span>Mais clareza</span>
+                        <span>Mais precisão</span>
+                        <span>Mais profissionalismo</span>
+                    </div>
+                </div>
+
+                <div class="stepper-wrap">
+                    <div class="stepper-line"></div>
+
+                    <div class="stepper-item active" data-step-indicator="1">
+                        <div class="stepper-dot">1</div>
+                        <span>Dados</span>
+                    </div>
+
+                    <div class="stepper-item" data-step-indicator="2">
+                        <div class="stepper-dot">2</div>
+                        <span>Base e área</span>
+                    </div>
+
+                    <div class="stepper-item" data-step-indicator="3">
+                        <div class="stepper-dot">3</div>
+                        <span>Sistema</span>
+                    </div>
+
+                    <div class="stepper-item" data-step-indicator="4">
+                        <div class="stepper-dot">4</div>
+                        <span>Complementos</span>
+                    </div>
+
+                    <div class="stepper-item" data-step-indicator="5">
+                        <div class="stepper-dot">5</div>
+                        <span>Finalizar</span>
+                    </div>
+                </div>
+
+                <form id="budgetForm" class="wizard-form">
+                    <!-- ETAPA 1 -->
+                    <div class="wizard-step active" data-step="1">
+                        <div class="wizard-card">
+                            <div class="wizard-card-head">
+                                <span class="step-badge">Etapa 1</span>
+                                <h3>Dados do solicitante</h3>
+                                <p>Informações básicas para retorno do orçamento.</p>
+                            </div>
+
+                            <div class="form-grid form-grid-2">
+                                <div class="form-group">
+                                    <label for="orc_nome">Nome</label>
+                                    <input type="text" id="orc_nome" placeholder="Seu nome" required />
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="orc_empresa">Empresa</label>
+                                    <input type="text" id="orc_empresa" placeholder="Nome da empresa" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="orc_telefone">Telefone / WhatsApp</label>
+                                    <input type="text" id="orc_telefone" placeholder="(00) 00000-0000" required />
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="orc_email">E-mail</label>
+                                    <input type="email" id="orc_email" placeholder="seuemail@empresa.com.br" />
+                                </div>
+
+                                <div class="form-group form-span-2">
+                                    <label for="orc_cidade">Cidade / UF</label>
+                                    <input type="text" id="orc_cidade" placeholder="Cidade / Estado" />
+                                </div>
+                            </div>
+
+                            <div class="wizard-actions">
+                                <button type="button" class="btn next-step" data-next="2">Continuar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ETAPA 2 -->
+                    <div class="wizard-step" data-step="2">
+                        <div class="wizard-card">
+                            <div class="wizard-card-head">
+                                <span class="step-badge">Etapa 2</span>
+                                <h3>Condição do substrato e área</h3>
+                                <p>Defina a base existente e a metragem principal.</p>
+                            </div>
+
+                            <div class="form-grid form-grid-2">
+                                <div class="form-group">
+                                    <label for="substrato">Condição do substrato / base</label>
+                                    <div class="select-wrap">
+                                        <select id="substrato">
+                                            <option value="">Selecione</option>
+                                            <option
+                                                value="Concreto usinado não polido com idade de cura menor que 28 dias">
+                                                Concreto usinado não polido com idade de cura menor que 28 dias
+                                            </option>
+                                            <option
+                                                value="Concreto usinado não polido com idade de cura maior que 28 dias">
+                                                Concreto usinado não polido com idade de cura maior que 28 dias
+                                            </option>
+                                            <option value="Concreto polido">Concreto polido</option>
+                                            <option value="Piso com pintura existente">Piso com pintura existente
+                                            </option>
+                                            <option value="Piso com revestimento existente">Piso com revestimento
+                                                existente</option>
+                                            <option value="Outro">Outro</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="substrato_outros">Observações da base</label>
+                                    <textarea id="substrato_outros" rows="4"
+                                        placeholder="Descreva se houver outro cenário, patologias, umidade, base antiga, etc."></textarea>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="comprimento">Comprimento (m)</label>
+                                    <input type="number" id="comprimento" min="0" step="0.01" placeholder="Ex: 20" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="largura">Largura (m)</label>
+                                    <input type="number" id="largura" min="0" step="0.01" placeholder="Ex: 15" />
+                                </div>
+
+                                <div class="form-group form-span-2">
+                                    <label for="area_total">Área total (m²)</label>
+                                    <input type="text" id="area_total" placeholder="Calculado automaticamente"
+                                        readonly />
+                                </div>
+                            </div>
+
+                            <div class="wizard-actions">
+                                <button type="button" class="btn btn-outline prev-step" data-prev="1">Voltar</button>
+                                <button type="button" class="btn next-step" data-next="3">Continuar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ETAPA 3 -->
+                    <div class="wizard-step" data-step="3">
+                        <div class="wizard-card">
+                            <div class="wizard-card-head">
+                                <span class="step-badge">Etapa 3</span>
+                                <h3>Tipo de orçamento e sistema</h3>
+                                <p>Escolha como a proposta será montada.</p>
+                            </div>
+
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label>Tipo de orçamento</label>
+                                    <div class="choice-grid choice-grid-2">
+                                        <label class="choice-card choice-card-option">
+                                            <input type="radio" name="tipo_orcamento"
+                                                value="Sistema completo (material + mão de obra)" checked />
+                                            <div class="choice-content">
+                                                <strong>Sistema completo</strong>
+                                                <small>Material + mão de obra</small>
+                                            </div>
+                                        </label>
+
+                                        <label class="choice-card choice-card-option">
+                                            <input type="radio" name="tipo_orcamento" value="Somente mão de obra" />
+                                            <div class="choice-content">
+                                                <strong>Somente mão de obra</strong>
+                                                <small>Execução sem fornecimento de material</small>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Serviço principal</label>
+                                    <div class="choice-grid choice-grid-3">
+                                        <label class="choice-card choice-card-option service-card-choice">
+                                            <input type="radio" name="servico_principal" value="Pintura" />
+                                            <div class="choice-content">
+                                                <strong>Pintura</strong>
+                                                <small>Sistemas de pintura industrial</small>
+                                            </div>
+                                        </label>
+
+                                        <label class="choice-card choice-card-option service-card-choice">
+                                            <input type="radio" name="servico_principal" value="Revestimento" />
+                                            <div class="choice-content">
+                                                <strong>Revestimento</strong>
+                                                <small>Sistemas resinados e espatulados</small>
+                                            </div>
+                                        </label>
+
+                                        <label class="choice-card choice-card-option service-card-choice">
+                                            <input type="radio" name="servico_principal" value="Lapidação" />
+                                            <div class="choice-content">
+                                                <strong>Lapidação</strong>
+                                                <small>Polimento e alto brilho</small>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- BLOCO PINTURA -->
+                            <div class="conditional-block" id="blocoPintura">
+                                <div class="conditional-head">
+                                    <h4>Detalhes da pintura</h4>
+                                </div>
+
+                                <div class="form-grid form-grid-3">
+                                    <div class="form-group">
+                                        <label for="pintura_tipo">Tipo de pintura</label>
+                                        <div class="select-wrap">
+                                            <select id="pintura_tipo">
+                                                <option value="">Selecione</option>
+                                                <option value="Epóxi">Epóxi</option>
+                                                <option value="PU">PU</option>
+                                                <option value="Uretano">Uretano</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="pintura_micras">Micras</label>
+                                        <div class="select-wrap">
+                                            <select id="pintura_micras">
+                                                <option value="">Selecione</option>
+                                                <option value="250">250</option>
+                                                <option value="350">350</option>
+                                                <option value="450">450</option>
+                                                <option value="500">500</option>
+                                                <option value="700">700</option>
+                                                <option value="1000">1000</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="pintura_obs">Observações</label>
+                                        <input type="text" id="pintura_obs" placeholder="Opcional" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- BLOCO REVESTIMENTO -->
+                            <div class="conditional-block" id="blocoRevestimento">
+                                <div class="conditional-head">
+                                    <h4>Detalhes do revestimento</h4>
+                                </div>
+
+                                <div class="form-grid form-grid-4">
+                                    <div class="form-group">
+                                        <label for="revest_tipo">Tipo de revestimento</label>
+                                        <div class="select-wrap">
+                                            <select id="revest_tipo">
+                                                <option value="">Selecione</option>
+                                                <option value="Epóxi">Epóxi</option>
+                                                <option value="Uretano">Uretano</option>
+                                                <option value="Outro">Outro</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="revest_acabamento">Acabamento</label>
+                                        <div class="select-wrap">
+                                            <select id="revest_acabamento">
+                                                <option value="">Selecione</option>
+                                                <option value="Autonivelante">Autonivelante</option>
+                                                <option value="Espatulado">Espatulado</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="revest_espessura">Espessura (mm)</label>
+                                        <div class="select-wrap">
+                                            <select id="revest_espessura">
+                                                <option value="">Selecione</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="revest_outros">Outros / especificar</label>
+                                        <input type="text" id="revest_outros" placeholder="Se necessário" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- BLOCO LAPIDAÇÃO -->
+                            <div class="conditional-block" id="blocoLapidacao">
+                                <div class="conditional-head">
+                                    <h4>Detalhes da lapidação</h4>
+                                </div>
+
+                                <div class="form-grid form-grid-2">
+                                    <div class="form-group">
+                                        <label for="lapidacao_tipo">Nível desejado</label>
+                                        <div class="select-wrap">
+                                            <select id="lapidacao_tipo">
+                                                <option value="">Selecione</option>
+                                                <option value="Lapidação técnica">Lapidação técnica</option>
+                                                <option value="Polimento com alto brilho">Polimento com alto brilho
+                                                </option>
+                                                <option value="Lapidação e revitalização">Lapidação e revitalização
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="lapidacao_obs">Observações</label>
+                                        <input type="text" id="lapidacao_obs" placeholder="Opcional" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="wizard-actions">
+                                <button type="button" class="btn btn-outline prev-step" data-prev="2">Voltar</button>
+                                <button type="button" class="btn next-step" data-next="4">Continuar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ETAPA 4 -->
+                    <div class="wizard-step" data-step="4">
+                        <div class="wizard-card">
+                            <div class="wizard-card-head">
+                                <span class="step-badge">Etapa 4</span>
+                                <h3>Complementos</h3>
+                                <p>Superfícies verticais e demarcações adicionais.</p>
+                            </div>
+
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label>Possui superfícies verticais?</label>
+                                    <div class="choice-grid choice-grid-2 choice-grid-binary">
+                                        <label class="choice-card choice-card-option choice-card-center">
+                                            <input type="radio" name="sup_verticais" value="Sim" />
+                                            <div class="choice-content">
+                                                <strong>Sim</strong>
+                                            </div>
+                                        </label>
+
+                                        <label class="choice-card choice-card-option choice-card-center">
+                                            <input type="radio" name="sup_verticais" value="Não" checked />
+                                            <div class="choice-content">
+                                                <strong>Não</strong>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="conditional-block" id="blocoVerticais">
+                                <div class="form-grid form-grid-2">
+                                    <div class="form-group">
+                                        <label for="sup_tipo">Tipo</label>
+                                        <div class="select-wrap">
+                                            <select id="sup_tipo">
+                                                <option value="">Selecione</option>
+                                                <option value="Rodapé com pintura">Rodapé com pintura</option>
+                                                <option value="Rodapé com revestimento">Rodapé com revestimento</option>
+                                                <option value="Mureta com pintura">Mureta com pintura</option>
+                                                <option value="Mureta com revestimento">Mureta com revestimento</option>
+                                                <option value="Parede com pintura">Parede com pintura</option>
+                                                <option value="Parede com revestimento">Parede com revestimento</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="sup_comprimento">Comprimento (m)</label>
+                                        <input type="number" id="sup_comprimento" min="0" step="0.01" />
+                                    </div>
+
+                                    <div class="form-group form-span-2">
+                                        <label for="sup_altura">Altura (cm)</label>
+                                        <input type="number" id="sup_altura" min="0" step="0.01" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label>Possui demarcações?</label>
+                                    <div class="choice-grid choice-grid-2 choice-grid-binary">
+                                        <label class="choice-card choice-card-option choice-card-center">
+                                            <input type="radio" name="demarcacoes" value="Sim" />
+                                            <div class="choice-content">
+                                                <strong>Sim</strong>
+                                            </div>
+                                        </label>
+
+                                        <label class="choice-card choice-card-option choice-card-center">
+                                            <input type="radio" name="demarcacoes" value="Não" checked />
+                                            <div class="choice-content">
+                                                <strong>Não</strong>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="conditional-block" id="blocoDemarcacoes">
+                                <div class="form-grid form-grid-2">
+                                    <div class="form-group">
+                                        <label for="faixas_largura">Faixas - largura (cm)</label>
+                                        <input type="number" id="faixas_largura" min="0" step="0.01" />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="faixas_comprimento">Faixas - comprimento (m)</label>
+                                        <input type="number" id="faixas_comprimento" min="0" step="0.01" />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="hachuras_qtd">Hachurantes - quantidade</label>
+                                        <input type="number" id="hachuras_qtd" min="0" step="1" />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="extintores_qtd">Extintores - quantidade</label>
+                                        <input type="number" id="extintores_qtd" min="0" step="1" />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="pne_qtd">PNE - quantidade</label>
+                                        <input type="number" id="pne_qtd" min="0" step="1" />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="zebrada_largura">Faixa zebrada - largura (m)</label>
+                                        <input type="number" id="zebrada_largura" min="0" step="0.01" />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="zebrada_comprimento">Faixa zebrada - comprimento (m)</label>
+                                        <input type="number" id="zebrada_comprimento" min="0" step="0.01" />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="divisoes_obs">Divisões / especificar</label>
+                                        <input type="text" id="divisoes_obs"
+                                            placeholder="Boxes, corredores, áreas separadas..." />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="wizard-actions">
+                                <button type="button" class="btn btn-outline prev-step" data-prev="3">Voltar</button>
+                                <button type="button" class="btn next-step" data-next="5">Continuar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ETAPA 5 -->
+                    <div class="wizard-step" data-step="5">
+                        <div class="wizard-card">
+                            <div class="wizard-card-head">
+                                <span class="step-badge">Etapa 5</span>
+                                <h3>Finalização</h3>
+                                <p>Inclua informações adicionais e envie a solicitação.</p>
+                            </div>
+
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="orc_obs_final">Observações gerais</label>
+                                    <textarea id="orc_obs_final" rows="6"
+                                        placeholder="Prazo, necessidade de visita técnica, envio de imagens, detalhes do ambiente, etc."></textarea>
+                                </div>
+                            </div>
+
+                            <div class="review-box">
+                                <h4>Resumo do envio</h4>
+                                <p>
+                                    Ao clicar em enviar, o sistema abrirá o WhatsApp com a solicitação formatada
+                                    para a equipe da New Floor.
+                                </p>
+                            </div>
+
+                            <div class="wizard-actions">
+                                <button type="button" class="btn btn-outline prev-step" data-prev="4">Voltar</button>
+                                <button type="submit" class="btn">Enviar orçamento pelo WhatsApp</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <aside class="sidebar-column reveal">
+                <div class="sidebar-card">
+                    <span class="section-tag">ATENDIMENTO</span>
+                    <h3>Contato direto com a empresa</h3>
+
+                    <div class="contact-list sidebar-contact-list">
+                        <a href="tel:+551938822904"><strong>Telefone:</strong> (19) 3882-2904</a>
+                        <a href="https://wa.me/5519999999700" target="_blank"><strong>WhatsApp:</strong> (19)
+                            99999-9700</a>
+                        <a href="mailto:atendimento@newfloorpisos.com.br"><strong>E-mail:</strong>
+                            atendimento@newfloorpisos.com.br</a>
+                        <a href="mailto:adm@newfloorpisos.com.br"><strong>Comercial:</strong>
+                            adm@newfloorpisos.com.br</a>
+                        <span><strong>Endereço:</strong> Rua Lavinio Rebechi, 65, Jardim Beto Spana, Cosmópolis -
+                            SP</span>
+                    </div>
+                </div>
+
+                <div class="sidebar-card">
+                    <span class="section-tag">CONTATO RÁPIDO</span>
+                    <h3>Solicitar contato simples</h3>
+                    <p class="sidebar-text">Caso prefira, envie uma mensagem mais direta.</p>
+
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" placeholder="Seu nome" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="empresa">Empresa</label>
+                            <input type="text" id="empresa" placeholder="Nome da empresa" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefone">Telefone</label>
+                            <input type="text" id="telefone" placeholder="(00) 00000-0000" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" rows="5" placeholder="Descreva sua necessidade"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn full-btn">Enviar contato rápido</button>
+                    </form>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <section class="cta-band">
+        <div class="container cta-box reveal">
+            <div>
+                <span class="section-tag">ATENDIMENTO RÁPIDO</span>
+                <h2>Prefere falar direto agora?</h2>
+                <p>Use o botão abaixo e fale com a New Floor pelo WhatsApp.</p>
+            </div>
+            <a href="https://wa.me/5519999999700?text=Olá%2C%20quero%20falar%20com%20a%20New%20Floor." target="_blank"
+                class="btn">Chamar no WhatsApp</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <img src="assets/logo-newfloor.png" alt="Logo New Floor" class="footer-logo" />
+                <p>Soluções técnicas para pisos industriais com desempenho, durabilidade e acabamento profissional.</p>
+            </div>
+
+            <div>
+                <h4>Navegação</h4>
+                <a href="empresa.html">Empresa</a>
+                <a href="servicos.html">Serviços</a>
+                <a href="segmentos.html">Segmentos</a>
+                <a href="obras.html">Obras</a>
+            </div>
+
+            <div>
+                <h4>Contato</h4>
+                <a href="tel:+551938822904">(19) 3882-2904</a>
+                <a href="mailto:atendimento@newfloorpisos.com.br">atendimento@newfloorpisos.com.br</a>
+                <span>Cosmópolis - SP</span>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© <span id="year"></span> New Floor Pisos e Revestimentos Industriais. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5519999999700?text=Olá%2C%20quero%20falar%20com%20a%20New%20Floor." target="_blank"
+        class="whatsapp-float">WhatsApp</a>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

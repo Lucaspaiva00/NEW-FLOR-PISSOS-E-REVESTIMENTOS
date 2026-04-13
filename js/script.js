@@ -238,7 +238,7 @@ if (budgetForm) {
             `Possui demarcações: ${getRadioValue("demarcacoes") || "-"}%0A` +
             `Faixas - largura (cm): ${getValue("faixas_largura") || "-"}%0A` +
             `Faixas - comprimento (m): ${getValue("faixas_comprimento") || "-"}%0A` +
-            `Hachurantes - quantidade: ${getValue("hachuras_qtd") || "-"}%0A` +
+            `Hidrantes - quantidade: ${getValue("hidrantes_qtd") || "-"}%0A` +
             `Extintores - quantidade: ${getValue("extintores_qtd") || "-"}%0A` +
             `PNE - quantidade: ${getValue("pne_qtd") || "-"}%0A` +
             `Faixa zebrada - largura (m): ${getValue("zebrada_largura") || "-"}%0A` +

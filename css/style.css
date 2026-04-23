@@ -224,8 +224,7 @@ textarea {
 .hero-slide {
     background-size: cover;
     background-position: center;
-    opacity: 0;
-    transition: opacity 1s ease;
+    filter: brightness(0.85) contrast(1.05);
 }
 
 .hero-slide.active {
@@ -234,9 +233,8 @@ textarea {
 
 .hero-overlay {
     background:
-        linear-gradient(90deg, rgba(4, 8, 16, 0.92) 0%, rgba(4, 8, 16, 0.72) 42%, rgba(4, 8, 16, 0.32) 100%),
-        linear-gradient(180deg, rgba(10, 61, 145, 0.16), rgba(7, 17, 31, 0.76));
-    z-index: 1;
+        linear-gradient(90deg, rgba(3, 8, 18, 0.96) 0%, rgba(3, 8, 18, 0.85) 40%, rgba(3, 8, 18, 0.55) 100%),
+        linear-gradient(180deg, rgba(10, 61, 145, 0.22), rgba(7, 17, 31, 0.82));
 }
 
 .hero-inner {
@@ -1457,5 +1455,39 @@ textarea {
 
     .contato-page .choice-content small {
         font-size: 0.82rem;
+    }
+}
+
+/* =========================================
+   GALERIA PADRÃO COM 2 IMAGENS (SERVIÇOS)
+========================================= */
+
+.gallery-grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+.gallery-grid-2 .gallery-item img {
+    height: 340px;
+}
+
+.gallery-grid-2 .gallery-item {
+    transition: 0.3s ease;
+}
+
+.gallery-grid-2 .gallery-item:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+/* RESPONSIVO */
+@media (max-width: 860px) {
+    .gallery-grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid-2 .gallery-item img {
+        height: 280px;
     }
 }
